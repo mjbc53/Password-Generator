@@ -18,6 +18,8 @@ var charSet = ""
 
 //function asking for length of password
 function passwordLength(){
+  //reset passLength 
+  passlength = ""
   //prompt asking for length of password
   passLength = passlength += prompt("Please specify a length for the password between 8-128 characters long.")
   //check making sure a value was entered
@@ -37,6 +39,8 @@ function passwordLength(){
 
 // fuction to confirm which character sets to use
 function confirmCharSet(){
+  //reset charSet
+  charSet = ""
   //confirm lowerCase
   var conLower = confirm("Would you like to you have lower case characters?")
 
@@ -78,16 +82,21 @@ function confirmCharSet(){
   console.log(charSet)
 }
 
+//Math Function 
+
+//function to generatePassword()
 function generatePassword(){
-// passwordLength() function call
-passwordLength()
-//confirmCharSet() function call (or confirm character set)
-confirmCharSet()
+  //returned password
+  var retpass = ""
+  // passwordLength() function call
+  passwordLength()
+  //confirmCharSet() function call (or confirm character set)
+  confirmCharSet()
   
-
-
-
-
+for (i=0; i < passlength; i++){
+  retpass += charSet.charAt(Math.ceil(Math.random()*charSet.length))
+}
+return retpass
 }
 
 
