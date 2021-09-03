@@ -15,4 +15,12 @@ a password to be copied and used.
 
 ## GitHub page & Repository
 * [Github page](https://mjbc53.github.io/Password-Generator/)
-* [Github Repo]()
+* [Github Repo](https://github.com/mjbc53/Password-Generator)
+
+## Page screenshot
+<img src="./assets/page-screenshot/passwordgenerator-screenshot.png" 
+width="500px" height="300px">
+
+## Contact
+* Email: mjbc53@gmail.com
+* Github: [mjbc53](https://github.com/mjbc53)
